@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+
+    <meta name="Keywords" content="Páginas Web,html,medellin,Aplicaciones,Software,Computadores,Servicio Técnico,Soporte,Redes Sociales,redes,publicidad,paginas"/>
+    <meta name="Description" content="Compañia de software colombiana | Páginas Web | Marketing Digital | Servicio Técnico | Redes Sociales | Aplicaciones Movíles | Medellín" />
+
+    <meta name="Robots" content="all" />
+    <meta name="distribution" content="global"/>
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <title>Grupo Tenshi</title>
+
+    <script  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <canvas style="width: 100%; height: 100%;">
+    </canvas>
+
+    <div id="root"></div>
+
+  </body>
+
+  <script src="https://unpkg.com/three@0.102.1/build/three.min.js" defer></script>
+
+  <script src="https://kit.fontawesome.com/e5b9526e9c.js" defer></script>
+
+  <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script>
+
+
+   <script>
+       var n_particulas = 50
+
+       const randomInt = (min, max) => Math.floor(Math.random() * (max - min) + min)
+
+       function obtenerDistancia(ob1, ob2) {
+           let x = ob1.x - ob2.x
+           let y = ob1.y - ob2.y
+           return Math.sqrt(x * x + y * y)
+       }
+
+
+       var canvas = document.querySelector('canvas')
+       //Background canvas
+       canvas.style.background = '#000';
+       canvas.width = window.innerWidth;
+       canvas.height = outerHeight;
+
+       var c = canvas.getContext('2d')
+
+       class Particula {
+           //Background color punto
+           constructor(x, y, radio, color) {
+               this.color = color || '#fff'
+               this.x = x
+               this.y = y
+               this.radio = radio || 1
+               this.dx = Math.random() - 0.5
+               this.dy = Math.random() - 0.5
+           }
+           dibujar() {
+               c.beginPath()
+               c.arc(this.x, this.y, this.radio, 0, Math.PI * 2, true)
+               c.fillStyle = this.color
+               c.fill()
+               c.closePath()
+           }
+           recargar(array = []) {
+
+               for (let i = 0; i < array.length; i++) {
+                   let d = obtenerDistancia(this, array[i])
+                   if (d < 100) {
+                       c.beginPath()
+                       c.moveTo(this.x, this.y)
+                       c.lineTo(array[i].x, array[i].y)
+                       c.lineWidth = .1
+                       c.strokeStyle = '#fff'
+                       c.stroke()
+                       c.closePath()
+                   }
+
+               }
+
+               if (this.y + this.radio > canvas.height || this.y - this.radio < 0) this.dy = -this.dy
+               if (this.x + this.radio > canvas.width || this.x - this.radio < 0) this.dx = -this.dx
+
+               this.x += this.dx
+               this.y += this.dy
+               this.dibujar()
+           }
+       }
+
+
+
+       var particulas = []
+
+       for (let i = 0; i < n_particulas; i++) {
+           let radio = 1
+           // let x = Math.random() * canvas.width
+           let x = randomInt(radio * 5, canvas.width - radio * 5)
+           let y = randomInt(radio * 5, canvas.height - radio * 5)
+           // let y = Math.random() * canvas.height
+           particulas.push(new Particula(x, y, radio))
+       }
+       console.log(particulas)
+
+
+
+       function animacion() {
+           requestAnimationFrame(animacion)
+           c.clearRect(0, 0, canvas.width, canvas.height)
+
+           particulas.forEach(particula => particula.recargar(particulas))
+       }
+       animacion()
+   </script>
+
+
+   <script>
+       $('.carousel').carousel({
+           interval: 3500
+       })
+   </script>
+
+
+   <script src="js/wow.min.js"></script>
+   <script>
+       new WOW().init();
+   </script>
+
+  <!--
+  public url
+  -->
+</html>
