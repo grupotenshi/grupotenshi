@@ -1,4 +1,4 @@
-# grupotenshi
+# Grupo Tenshi
 Grupo Tenshi Página Web
 
 # Contribuidores
