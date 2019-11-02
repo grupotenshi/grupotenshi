@@ -210,3 +210,30 @@ body,
     height: 100%;
 
 }
+
+.frame__title-wrap {
+  margin-top: 10px;
+  position: absolute;
+	background: rgba(1,1,1,0.7);
+	border-radius: 10px;
+	box-shadow: 5px 5px 13px 5px rgba(255,255,255,0.5);
+	padding: 10px;
+	display: block;
+	width: max-content;
+}
+
+.header__title {
+	text-transform: uppercase;
+	letter-spacing: 0.15rem;
+	background: linear-gradient(40deg, #fdf680 0%,#d6716d 50%, #a0fafb 100%);
+	background-size: cover;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	font-weight: 100;
+	margin: 0;
+	opacity: 1;
+  font-size: 2em;
+	display: block;
+}

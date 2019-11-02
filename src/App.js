@@ -9,6 +9,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="container-fluid">
+      
+        <div class="frame__title-wrap"><h1 class="header__title">Grupo Tenshi</h1></div>
+
           <div id="carousel" className="carousel slide carousel-fade " data-ride="carousel">
               <ol className="carousel-indicators wow fadeIn " data-wow-duration="5s">
                   <li data-target="#carousel" data-slide-to="0" className="active"></li>
