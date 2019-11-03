@@ -5,7 +5,6 @@ import logo from './logo.png';
 import $ from 'jquery';*/
 import Carousel from './Inicio/Carousel.js';
 import QueHacemos from './Inicio/QueHacemos.js';
-import Particles from 'react-particles-js';
 
 class App extends React.Component {
 

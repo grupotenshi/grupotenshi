@@ -162,7 +162,8 @@ ant-2 {
 }
 
 .carousel {
-  width: 100%;
+  width: 100vw;
+  margin-left: -15px;
 }
 
 .carousel-indicators li {
@@ -382,13 +383,21 @@ body {
 	overflow: hidden;
 }
 
-.particles div{
-  width: 400px;
-  background: rgba(255,255,255,.5);
-  height: calc(100vh - 250px);
+.particles{
+  /*background: rgba(255,255,255,.9);*/
+}
+
+.particles div div{
+  width: 380px;
+  background: rgba(255,255,255,1);
+  height: calc(100vh - 300px);
   margin: auto;
   border-radius: 6px;
 }
-.particles div canvas{
 
+
+/*Estilo para que canvas no lea display:none*/
+.carousel-item{
+  display: block;
+  z-index: -1;
 }
