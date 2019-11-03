@@ -356,24 +356,6 @@ body,
   z-index: 2000;
 }
 
-@media(max-width : 768px) {
-  .frame__WhatsApp .btn .fab {
-    color: #fff;
-    -webkit-transform: scale(.9);
-    transform: scale(.9);
-    background: white;
-    -webkit-background-clip: text;
-    /* Also define standard property for compatibility */
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .frame__WhatsApp .btn:before {
-    top: -10% !important;
-    left: -10% !important;
-  }
-}
-
 .celular.animated {
   animation-duration: 7s;
 }
