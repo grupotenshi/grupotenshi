@@ -206,7 +206,7 @@ body,
 .frame__title-wrap {
   margin: 20px 0 0 20px;
   position: fixed;
-  background: rgba(1, 1, 1, 0.85);
+  background: rgba(1, 1, 1, 0.9);
   border-radius: 10px;
   box-shadow: 5px 5px 10px 3px rgba(255, 255, 255, 0.3);
   padding: 10px;
