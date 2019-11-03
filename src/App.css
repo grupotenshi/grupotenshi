@@ -362,24 +362,27 @@ body,
 
 /*Carousel Diseño Particulas*/
 body {
-	overflow: hidden;
+  overflow: hidden;
 }
 
-.particles{
+.particles {
   /*background: rgba(255,255,255,.9);*/
 }
 
-.particles div div{
+.particles div div {
   width: 380px;
-  background: rgba(255,255,255,1);
+  background: rgba(255, 255, 255, 1);
   height: calc(100vh - 300px);
   margin: auto;
   border-radius: 6px;
 }
 
+.particles div div canvas {
+  cursor: pointer;
+}
 
 /*Estilo para que canvas no lea display:none*/
-.carousel-item{
+.carousel-item {
   display: block;
   z-index: -1;
 }
