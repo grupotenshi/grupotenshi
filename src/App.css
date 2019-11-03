@@ -1,4 +1,4 @@
-canvas {
+#canvasBack {
   position: fixed;
   z-index: -1;
   width: 100%;
@@ -375,4 +375,20 @@ body,
 
 .celular.animated {
   animation-duration: 7s;
+}
+
+/*Carousel Diseño Particulas*/
+body {
+	overflow: hidden;
+}
+
+.particles div{
+  width: 400px;
+  background: rgba(255,255,255,.5);
+  height: calc(100vh - 250px);
+  margin: auto;
+  border-radius: 6px;
+}
+.particles div canvas{
+
 }

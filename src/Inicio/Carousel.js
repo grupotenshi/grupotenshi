@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Particles from 'react-particles-js';
+
 class Carousel extends React.Component {
 
   render() {
@@ -79,17 +81,72 @@ class Carousel extends React.Component {
               </div>
               <div className="carousel-item">
 
-                <div className="row justify-content-center align-items-center h-100">
-                  <div className="col-12">
-                    <div className="row mx-0 justify-content-center align-items-center">
-                      <div className="col-lg-6 d-flex justify-content-center align-items-end ">
-                        <img className="animated fadeInDown mx-1 ant-08" src="img/movil.png" alt="" />
-                        <img className="animated fadeInDown mx-1 ant-11" src="img/tablet.png" alt="" />
-                        <img className="animated fadeInDown  mx-1 ant-14" src="img/laptop.png" alt="" />
-                        <img className="animated fadeInDown mx-1 ant-17" src="img/monitor.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                <div className="row align-content-center justify-content-center align-items-center h-100 w-100">
+
+                <div className="particles col-6">
+                <Particles
+              params={{
+          	    "fps_limit": 25,
+          	    "particles": {
+          	        "number": {
+          	            "value": 100,
+          	            "density": {
+          	                "enable": false
+          	            }
+          	        },
+          	        "line_linked": {
+          	            "enable": true,
+          	            "distance": 30,
+          	            "opacity": 0.3
+          	        },
+          	        "move": {
+          	            "speed": 0
+          	        },
+          	        "opacity": {
+          	            "anim": {
+          	                "enable": true,
+          	                "opacity_min": 0,
+          	                "speed": 2,
+          	                "sync": true
+          	            },
+          	            "value": 0.4
+          	        }
+          	    },
+          	    "polygon": {
+          	        "enable": true,
+          	        "scale": 0.5,
+          	        "type": "inline",
+          	        "move": {
+          	            "radius": 10
+          	        },
+          	        "url": "img/reno.svg",
+          	        "inline": {
+          	            "arrangement": "equidistant"
+          	        },
+          	        "draw": {
+          	            "enable": true,
+          	            "stroke": {
+          	                "color": "rgba(135, 0, 255, .5)"
+          	            }
+          	        }
+          	    },
+          	    "retina_detect": false,
+          	    "interactivity": {
+          	        "events": {
+          	            "onhover": {
+          	                "enable": true,
+          	                "mode": "bubble"
+          	            }
+          	        },
+          	        "modes": {
+          	            "bubble": {
+          	                "size": 6,
+          	                "distance": 40
+          	            }
+          	        }
+          	    }
+          	}} />
+            </div>
                 </div>
               </div>
             </div>

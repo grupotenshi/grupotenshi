@@ -5,6 +5,7 @@ import logo from './logo.png';
 import $ from 'jquery';*/
 import Carousel from './Inicio/Carousel.js';
 import QueHacemos from './Inicio/QueHacemos.js';
+import Particles from 'react-particles-js';
 
 class App extends React.Component {
 
@@ -24,7 +25,6 @@ class App extends React.Component {
           <Carousel/>
 
           <QueHacemos/>
-
 
           <div className="container text-dark p-3 mb-3 wow zoomIn faster box">
 
