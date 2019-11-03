@@ -49,7 +49,8 @@
 
 
    <script>
-       var n_particulas = 50
+        var n_particulas = (window.innerWidth * 50)/1440;
+        n_particulas = n_particulas >= 30 ? n_particulas : 30;
 
        const randomInt = (min, max) => Math.floor(Math.random() * (max - min) + min)
 
@@ -60,11 +61,11 @@
        }
 
 
-       var canvas = document.querySelector('canvas')
+       var canvas = document.getElementById("canvasBack");
        //Background canvas
        canvas.style.background = '#000';
        canvas.width = window.innerWidth;
-       canvas.height = outerHeight;
+       canvas.height = outerHeight;//Toda la pantalla
 
        var c = canvas.getContext('2d')
 
@@ -94,7 +95,7 @@
                        c.moveTo(this.x, this.y)
                        c.lineTo(array[i].x, array[i].y)
                        c.lineWidth = .1
-                       c.strokeStyle = '#fff'
+                       c.strokeStyle = n_particulas <= 30 ? 'rgba(255,255,255,.2)' : this.color;
                        c.stroke()
                        c.closePath()
                    }
@@ -122,8 +123,6 @@
            // let y = Math.random() * canvas.height
            particulas.push(new Particula(x, y, radio))
        }
-       console.log(particulas)
-
 
 
        function animacion() {
@@ -138,8 +137,7 @@
 
    <script>
        $('.carousel').carousel({
-           //interval: 3500
-           interval: 3500000
+          interval: 5000
        })
    </script>
 
