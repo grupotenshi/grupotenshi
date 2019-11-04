@@ -358,6 +358,9 @@ body, html {
   width: 100vw;
   overflow-x: hidden;
   height: auto;
+}
+
+body{
   background-color: black;
 }
 
