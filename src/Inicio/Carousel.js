@@ -60,7 +60,7 @@ class Carousel extends React.Component {
                         <img className="animated fadeInRight mx-1 ant-08" src="img/movilc.png" alt="" />
                       </div>*/}
                       <div className="Celular3d">
-                        <img type="image/webp" alt="Celular" src="https://rappipay.com/app/themes/rappipay/static/assets/images/convenient/phone-qr-co.webp" />
+                        <img alt="Celular" src="https://rappipay.com/app/themes/rappipay/static/assets/images/convenient/phone-qr-co.png" />
                       </div>
                     </div>
                     <div className="col-lg-6  text-white">

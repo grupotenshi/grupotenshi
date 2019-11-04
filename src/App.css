@@ -423,7 +423,7 @@ img {
 
 .Celular3d {
   transform: matrix3d(1, 0, 0, 0.0004, 0.08, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  height: 65vh;
+  height: 45vh;
   box-shadow: -1px 5px 20px 5px rgba(255, 255, 255, 0.35);
   border-radius: 36px;
   /*borde de la imagen*/
@@ -440,5 +440,9 @@ img {
     height: 85vh;
     width: auto;
     max-width: none;
+  }
+
+  .Celular3d {
+    height: 65vh;
   }
 }
