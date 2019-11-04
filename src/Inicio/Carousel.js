@@ -101,7 +101,7 @@ class Carousel extends React.Component {
                     	                "speed": 2,
                     	                "sync": false
                     	            },
-                    	            "value": 0.4
+                    	            "value": 0.25
                     	        },
                               "color": {
                                 "value": "#8700FF"
@@ -150,7 +150,7 @@ class Carousel extends React.Component {
                   <div className="col-lg-6  text-white">
                     <h1 className="text-warning animated fadeInDown ant-07 ">Diseño Gráfico</h1>
 
-                    <span className="animated fadeInDown ant-05">Software a la medida, basados en las necesidades de tu empresa, podras optimizar tiempos y llevar control de tu empresa en tiempo real</span>
+                    <span className="animated fadeInDown ant-05">Diseñamos con pasión, dando soluciones en creación de marca, estrategias visuales, piezas publicitarias, etc.</span>
                   </div>
 
                 </div>
