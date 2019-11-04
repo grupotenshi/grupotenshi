@@ -49,7 +49,7 @@
 
 
    <script>
-        var n_particulas = (window.innerWidth * 50)/1440 >= 30 ? (window.innerWidth * 50)/1440 : 30;
+        var n_particulas = (window.innerWidth * 30)/1440 >= 20 ? (window.innerWidth * 30)/1440 : 10;
 
        const randomInt = (min, max) => Math.floor(Math.random() * (max - min) + min)
 
@@ -94,7 +94,7 @@
                        c.moveTo(this.x, this.y)
                        c.lineTo(array[i].x, array[i].y)
                        c.lineWidth = .1
-                       c.strokeStyle = n_particulas <= 30 ? 'rgba(255,255,255,.2)' : this.color;
+                       c.strokeStyle = window.innerWidth <= 768 ? 'rgba(255,255,255,.2)' : this.color;
                        c.stroke()
                        c.closePath()
                    }
