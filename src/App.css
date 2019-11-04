@@ -1,18 +1,12 @@
 #canvasBack {
   position: fixed;
-  z-index: -1;
+  z-index: -100;
   width: 100%;
   height: 100%;
 }
 
 .hv-100 {
   height: 100vh;
-}
-
-@media (min-width: 992px) {
-  .mt-lg-7 {
-    margin-top: 5rem !important;
-  }
 }
 
 .skill {
@@ -173,7 +167,7 @@ ant-2 {
   height: 15px;
   width: 15px;
   margin: 24px 8px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(130, 130, 130, 0.5);
   -webkit-transition: background-color 1.5s;
   transition: background-color 1.5s;
   border-radius: 50%;
@@ -360,18 +354,26 @@ body,
 }
 
 /*Carousel Diseño Particulas*/
-body {
+body, html {
+  width: 100vw;
   overflow-x: hidden;
+  height: auto;
 }
 
 .particles {
-  /*background: rgba(255,255,255,.9);*/
+  background: white;
+}
+
+.particles h1+span {
+  color: black;
 }
 
 .particles div div {
-  width: 380px;
+  height: 50vh;
+  /*width: 240px;*/
+  /*height: 298px;*/
+  max-width: 85%;
   background: rgba(255, 255, 255, 1);
-  height: calc(100vh - 300px);
   margin: auto;
   border-radius: 6px;
 }
@@ -384,4 +386,55 @@ body {
 .carousel-item {
   display: block;
   z-index: -1;
+}
+
+/*INSTAGRAM*/
+.botonInstagramPost:before {
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjkuMDYiIGhlaWdodD0iMTY5LjA2Ij48cGF0aCBkPSJNMTIyLjQgMEg0Ni42NkE0Ni43IDQ2LjcgMCAwIDAgMCA0Ni42NnY3NS43NWE0Ni43IDQ2LjcgMCAwIDAgNDYuNjUgNDYuNjVoNzUuNzZhNDYuNyA0Ni43IDAgMCAwIDQ2LjY1LTQ2LjY1VjQ2LjY2QTQ2LjcgNDYuNyAwIDAgMCAxMjIuNDEgMHptMzEuNjYgMTIyLjRhMzEuNyAzMS43IDAgMCAxLTMxLjY1IDMxLjY2SDQ2LjY1QTMxLjY5IDMxLjY5IDAgMCAxIDE1IDEyMi40MVY0Ni42NkEzMS43IDMxLjcgMCAwIDEgNDYuNjUgMTVoNzUuNzZhMzEuNyAzMS43IDAgMCAxIDMxLjY1IDMxLjY2djc1Ljc1eiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik04NC41MyA0MC45N2E0My42MSA0My42MSAwIDAgMC00My41NiA0My41NmMwIDI0LjAyIDE5LjU0IDQzLjU2IDQzLjU2IDQzLjU2czQzLjU2LTE5LjU0IDQzLjU2LTQzLjU2YTQzLjYxIDQzLjYxIDAgMCAwLTQzLjU2LTQzLjU2em0wIDcyLjEyYTI4LjYgMjguNiAwIDAgMS0yOC41Ni0yOC41NmMwLTE1Ljc1IDEyLjgxLTI4LjU2IDI4LjU2LTI4LjU2czI4LjU2IDEyLjgxIDI4LjU2IDI4LjU2YTI4LjYgMjguNiAwIDAgMS0yOC41NiAyOC41NnptNDUuMzktODQuODRhMTEuMDQgMTEuMDQgMCAwIDAtMTEgMTFjMCAyLjkgMS4xOCA1LjczIDMuMjMgNy43OGExMS4wOCAxMS4wOCAwIDAgMCA3Ljc3IDMuMjJjMi45IDAgNS43My0xLjE4IDcuNzgtMy4yMmExMS4wNSAxMS4wNSAwIDAgMCAwLTE1LjU2IDExLjA1IDExLjA1IDAgMCAwLTcuNzgtMy4yMnoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=) no-repeat 50% 50% rgba(0, 0, 0, .5);
+  background-size: 15% auto;
+  content: "";
+  height: 100%;
+  left: 0;
+  line-height: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity .3s ease;
+  visibility: hidden;
+  width: 100%;
+  z-index: 2;
+}
+
+.botonInstagramPost:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*Celular*/
+img {
+  max-width: 100%;
+  max-height: 100%;
+  /*No funciona 100% si el padre no tiene un height definido*/
+}
+
+.Celular3d {
+  transform: matrix3d(1, 0, 0, 0.0004, 0.08, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  height: 65vh;
+  box-shadow: -1px 5px 20px 5px rgba(255, 255, 255, 0.35);
+  border-radius: 36px;
+  /*borde de la imagen*/
+  background: rgba(255, 255, 255, .5);
+}
+
+/*RESPONSIVE-RESPONSIVE-RESPONSIVE-RESPONSIVE-RESPONSIVE-RESPONSIVE-RESPONSIVE-RESPONSIVE-RESPONSIVE*/
+@media (min-width: 992px) {
+  .mt-lg-7 {
+    margin-top: 5rem !important;
+  }
+
+  .particles div div {
+    height: 85vh;
+    width: auto;
+    max-width: none;
+  }
 }

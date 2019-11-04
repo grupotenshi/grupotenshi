@@ -44,10 +44,10 @@ class Carousel extends React.Component {
               </div>
               <div className="carousel-item">
 
-                <div className="row justify-content-center align-items-center h-100  p-3 m-0">
-                    <div className="col-lg-6 d-flex justify-content-center align-items-end ">
+                <div className="row align-content-center justify-content-center align-items-center h-100  p-3 m-0">
+                    <div className="col-lg-6 d-flex mb-5 mb-lg-0 justify-content-center align-items-end ">
 
-                      <div className="ct-tablet">
+                      {/*<div className="ct-tablet">
                         <img className="animated fadeInLeft mx-1 ant-08" src="img/tabletc.png" alt="Tablet" />
                       </div>
 
@@ -58,8 +58,10 @@ class Carousel extends React.Component {
 
                       <div className="ct-movil">
                         <img className="animated fadeInRight mx-1 ant-08" src="img/movilc.png" alt="" />
+                      </div>*/}
+                      <div className="Celular3d">
+                        <img type="image/webp" alt="Celular" src="https://rappipay.com/app/themes/rappipay/static/assets/images/convenient/phone-qr-co.webp" />
                       </div>
-
                     </div>
                     <div className="col-lg-6  text-white">
                       <h1 className="text-warning animated fadeInDown ant-07 ">Desarrollo de Software</h1>
@@ -72,13 +74,13 @@ class Carousel extends React.Component {
 
                 <div className="particles row align-content-center justify-content-center align-items-center h-100 w-100 m-0 p-3">
 
-                <div className="col-lg-6">
+                <div className="col-lg-6 mb-5 mb-lg-0 p-0">
                       <Particles
                         params={{
                     	    "fps_limit": 25,
                     	    "particles": {
                     	        "number": {
-                    	            "value": 100,
+                    	            "value": 200,
                     	            "density": {
                     	                "enable": false
                     	            }
@@ -86,39 +88,44 @@ class Carousel extends React.Component {
                     	        "line_linked": {
                     	            "enable": true,
                     	            "distance": 30,
-                    	            "opacity": 0.3
+                    	            "opacity": 0.5,
+                                   "color": "#8700FF"
                     	        },
                     	        "move": {
-                    	            "speed": 0
+                    	            "speed": 1
                     	        },
                     	        "opacity": {
                     	            "anim": {
                     	                "enable": true,
-                    	                "opacity_min": 0,
+                    	                "opacity_min": 0.05,
                     	                "speed": 2,
-                    	                "sync": true
+                    	                "sync": false
                     	            },
                     	            "value": 0.4
                     	        },
                               "color": {
                                 "value": "#8700FF"
+                              },"size": {
+                                "value": 5,
+                                "random": true
                               }
                     	    },
                     	    "polygon": {
                     	        "enable": true,
-                    	        "scale": 0.5,
+                              "scale":  (window.innerWidth * 50)/1440 > 30 ? 0.7 : 0.5,
                     	        "type": "inline",
                     	        "move": {
                     	            "radius": 10
                     	        },
-                    	        "url": "img/reno.svg",
+                    	        "url": "img/renito.svg",
                     	        "inline": {
                     	            "arrangement": "equidistant"
                     	        },
                     	        "draw": {
                     	            "enable": true,
                     	            "stroke": {
-                    	                "color": "rgba(135, 0, 255, .7)"
+                    	                "color": "rgba(135, 0, 255, 1)",
+                                      "width": 1
                     	            }
                     	        }
                     	    },

@@ -5,6 +5,7 @@ import logo from './logo.png';
 import $ from 'jquery';*/
 import Carousel from './Inicio/Carousel.js';
 import QueHacemos from './Inicio/QueHacemos.js';
+import InstaGrid from './Inicio/InstagramFeed.js';
 
 class App extends React.Component {
 
@@ -25,9 +26,21 @@ class App extends React.Component {
 
           <QueHacemos/>
 
-          <div className="container text-dark p-3 mb-3 wow zoomIn faster box">
+          <div className="container text-dark p-3 mb-3 wow zoomIn faster mb-5">
+            <div className="row align-content-center justify-content-center">
+              <div className="col-12 mb-5">
+                  <div className="social-btns">
+                    <a className="btn instagram" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/grupotenshi/">
+                      <i className="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                  </div>
+              </div>
+              <div className="col-12 col-md-8">
+                  <InstaGrid account="grupotenshi" numberOfMediaElements={9} classes={{button:'botonInstagramPost'}}/>
+              </div>
+            </div>
 
-            <div className="row text-white ">
+            {/*<div className="row text-white ">
               <div className="col-3 d-flex justify-content-center">
                 <img className="animated pulse infinite celular" src="img/inssmart.png" width="250" alt="" />
               </div>
@@ -46,7 +59,7 @@ class App extends React.Component {
                   <li className="wow zoomIn">Capacitación al cliente en el manejo de la página web</li>
                 </ul>
               </div>
-            </div>
+            </div>*/}
 
           </div>
         </div>
