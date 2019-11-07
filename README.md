@@ -7,5 +7,3 @@ Grupo Tenshi Página Web
 * Rosibel Bontemps
 
 # Medellín, Colombia
-* Primer cambio Rafa
-* Primer cambio app CodeHub
