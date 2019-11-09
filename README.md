@@ -7,6 +7,6 @@ Grupo Tenshi Página Web
 * Rosibel Bontemps
 
 # Instagram
-* <a target="_blank" href="https://www.instagram.com/grupotenshi/">@grupotenshi</a>
+* <a href="https://www.instagram.com/grupotenshi/">@grupotenshi</a>
 
 # Medellín, Colombia
