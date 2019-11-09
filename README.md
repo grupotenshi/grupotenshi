@@ -6,4 +6,7 @@ Grupo Tenshi Página Web
 * Rafael Ángel Velásquez Oliveros
 * Rosibel Bontemps
 
+# Instagram
+* @grupotenshi
+
 # Medellín, Colombia
