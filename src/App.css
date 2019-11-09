@@ -360,7 +360,7 @@ body, html {
   height: auto;
 }
 
-body{
+body {
   background-color: black;
 }
 
@@ -428,6 +428,36 @@ img {
   border-radius: 36px;
   /*borde de la imagen*/
   background: rgba(255, 255, 255, .5);
+}
+
+/*Iframe*/
+.Celular3d.Iframe{
+  overflow: hidden;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  width: 725px;
+  height: 1452px;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2.95);
+  transform: matrix3d(1, 0, 0, 0.0004, 0.08, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 2.95);
+  /*Falta en RESPONSIVE, pero no se debería mostrar un celular en un celular
+  a excepción de que se muestren varias resoluciones para una demostración.*/
+}
+.Celular3d iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.divIframeCelular {
+    width: 88%;
+    height: 84%;
+    position: absolute;
+    top: 88px;
+    left: 44px;
+    border: none;
+    border-bottom-right-radius: 8%;
+    border-bottom-left-radius: 8%;
+    overflow: hidden;
 }
 
 /*RESPONSIVE-RESPONSIVE-RESPONSIVE-RESPONSIVE-RESPONSIVE-RESPONSIVE-RESPONSIVE-RESPONSIVE-RESPONSIVE*/

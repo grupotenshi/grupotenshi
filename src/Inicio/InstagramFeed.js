@@ -45,8 +45,8 @@ const InstaGrid = ({ classes, media, account, status}: Props) => {
             </ButtonBase>
           </Grid>
         ))}
-      {status === 'loading' && <p>loading...</p>}
-      {status === 'failed' && <p>Check instagram here</p>}
+      {status === 'loading' && <p></p>}
+      {status === 'failed' && <p></p>}
     </Grid>
   );
 };
