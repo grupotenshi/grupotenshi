@@ -374,20 +374,12 @@ body {
   background-color: black;
 }
 
-.particles {
-  background: white;
-}
-
-.particles h1+span {
-  color: black;
-}
-
 .particles div div {
   height: 50vh;
   /*width: 240px;*/
   /*height: 298px;*/
   max-width: 85%;
-  background: rgba(255, 255, 255, 1);
+
   margin: auto;
   border-radius: 6px;
 }

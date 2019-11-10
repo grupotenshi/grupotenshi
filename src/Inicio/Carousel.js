@@ -111,7 +111,7 @@ class Carousel extends React.Component {
                     	    },
                     	    "polygon": {
                     	        "enable": true,
-                              "scale":  (window.innerWidth * 50)/1440 > 30 ? 0.7 : 0.5,
+                              "scale":  (window.innerWidth * 50)/1440 > 30 ? 0.55 : 0.4,
                     	        "type": "inline",
                     	        "move": {
                     	            "radius": 10
