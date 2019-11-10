@@ -18,27 +18,23 @@ class Carousel extends React.Component {
 
               <div className="carousel-item active">
 
-                <div className="row align-content-center justify-content-center h-100 p-3 m-0">
+                <div className="row align-content-center justify-content-center align-items-center h-100  p-3 m-0">
 
-                    <div className="col-12 mb-5 animated fadeInDown text-white ant-06">
-                      <h2 className="text-center text-warning animated fadeInDown ant-09">Te acompañamos en todo el proceso para el diseño y desarrollo de tu sitio web</h2>
-                    </div>
+                      <div className="col-lg-5 d-none d-lg-flex justify-content-center  ">
 
-                    <div className="col-lg-6 d-flex justify-content-center align-items-end ">
-                      <div className="ct-tablet">
-                        <img className="animated fadeInLeft mx-1 ant-08" src="img/tabletc.png" alt="Tablet" />
+                          <img src="img/proyectoo.png" alt="" className="imagencarousel1"/>
                       </div>
 
-                      <div className="ct-computador">
-                        <img className="animated fadeInDown mx-1 ant-05" src="img/pantallac.png" alt="Computador" />
-                      </div>
+                        <div className="col-lg-5  animated fadeInDown text-white ant-06">
+                            <h1 className="text-warning animated fadeInDown ant-09">Te acompañamos en todo el proceso para el diseño y desarrollo de tu sitio web</h1>
 
+                            <ul className="carousel1-lista" >
+                                <li>Realizamos propuestas coherentes</li>
+                                <li>Hablamos en palabras simples</li>
+                                <li>Capacitamos para tener el control total del sitio</li>
+                            </ul>
+                        </div>
 
-                      <div className="ct-movil">
-                        <img className="animated fadeInRight mx-1 abt-08" src="img/movilc.png" alt="" />
-                      </div>
-
-                    </div>
                 </div>
 
               </div>

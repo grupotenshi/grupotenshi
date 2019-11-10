@@ -55,6 +55,16 @@ section article span {
 
 section article i {
     font-size: 3.2em;
+    margin-bottom: 0.2em;
+}
+
+.carousel1-lista {
+  font-size: 1.2em;
+}
+
+.imagencarousel1{
+    width: 400px;
+    transform: translateY(20px);
 }
 
 ant-01 {
