@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?cbxcsp');
+  src:  url('../fonts/icomoon.eot?cbxcsp#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?cbxcsp') format('truetype'),
+    url('../fonts/icomoon.woff?cbxcsp') format('woff'),
+    url('../fonts/icomoon.svg?cbxcsp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-iconos_administracion:before {
+  content: "\e900";
+}
+.icon-iconos_comm-mag:before {
+  content: "\e901";
+}
+.icon-iconos_database2:before {
+  content: "\e902";
+}
+.icon-iconos_garantia:before {
+  content: "\e903";
+}
+.icon-iconos_progamacion2:before {
+  content: "\e904";
+}
+.icon-iconos_responsive:before {
+  content: "\e905";
+}

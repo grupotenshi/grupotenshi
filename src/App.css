@@ -53,8 +53,8 @@ section article span {
   color: #ffc107 !important;
 }
 
-section article .material-icons {
-  font-size: 3.2em;
+section article i {
+    font-size: 3.2em;
 }
 
 ant-01 {
