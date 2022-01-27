@@ -20,7 +20,7 @@
     "react-scripts": "3.0.1",
     "smooth-scroll": "^16.1.0",
     "stats.js": "^0.17.0",
-    "three": "^0.106.2",
+    "three": "^0.137.0",
     "three.phenomenon": "^1.2.0",
     "uon": "^1.2.1"
   },
